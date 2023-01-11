@@ -31,9 +31,7 @@ const dayClass = classNames("day-list__item", {
 })
 
   return (
-    <li className={dayClass} onClick={() => 
-    props.setDay(props.name)
-    }>
+    <li className={dayClass} onClick={props.setDay}>
       <h2 className="text--regular">{props.name}</h2>
       <h3 className="text--light">{formatSpots(props)}</h3>
     </li>
