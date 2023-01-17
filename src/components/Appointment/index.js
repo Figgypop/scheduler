@@ -38,7 +38,7 @@ export default function Appointment(props) {
   }
 
   const deleteInterview = function () {
-    transition(DELETING)
+    transition(DELETING, true)
     props.cancelInterview(props.id)
       .then(() => transition(EMPTY))
       .catch(error => transition(ERROR_DELETE, true))
@@ -104,8 +104,7 @@ export default function Appointment(props) {
       {mode === ERROR_DELETE &&
         <Error
           message="Error could not delete"
-          // USE ()=> TO CALL LATER
-          onClose={() => transition(SHOW, true)}
+          onClose={back}
         />}
 
     </article>
