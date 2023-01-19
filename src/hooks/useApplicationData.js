@@ -16,7 +16,8 @@ export default function useApplicationData(props) {
     let count = 0
     const dayObj = state.days.find(d => d.name === day)
     for (const id of dayObj.appointments) {
-      if (appointments[id].interview === null) {
+      const appointment = appointments[id]
+      if (appointment.interview === null) {
         count++
       }
     }
@@ -41,8 +42,8 @@ export default function useApplicationData(props) {
     return axios.put(`/api/appointments/${id}`, { interview })
       .then(() => {
         const dayObj = updateSpots(state, appointments, state.day)
-        const bookedSpots = [...state.days]
-        bookedSpots[dayObj.id - 1] = dayObj
+        const newDays = [...state.days]
+        newDays[dayObj.id - 1] = dayObj
         setState({ ...state, appointments })
       });
   }
@@ -63,8 +64,8 @@ export default function useApplicationData(props) {
     return axios.delete(`/api/appointments/${id}`)
       .then(() => {
         const dayObj = updateSpots(state, appointments, state.day)
-        const bookedSpots = [...state.days]
-        bookedSpots[dayObj.id - 1] = dayObj
+        const newDays = [...state.days]
+        newDays[dayObj.id - 1] = dayObj
         setState({ ...state, appointments })
       });
   }
