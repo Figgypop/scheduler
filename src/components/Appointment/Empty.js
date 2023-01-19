@@ -1,10 +1,6 @@
 import React from "react";
 
 
-/*
-The <Empty> component should accept the onAdd function as a prop. It should be called when the user clicks the Add button.
-*/
-
 export default function Empty(props) {
   return (
     <main className="appointment__add">

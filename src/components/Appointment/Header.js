@@ -1,8 +1,5 @@
 import React from "react";
 
-/*
-time:String - the time of the appointment (e.g "12pm")
-*/
 
 export default function Header(props) {
   return (

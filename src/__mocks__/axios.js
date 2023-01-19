@@ -1,5 +1,3 @@
-
-
 const fixtures = {
   days: [
     {
@@ -67,6 +65,8 @@ export default {
     });
 
   }),
+
+
   delete: jest.fn(url => {
 
     return Promise.resolve({
@@ -78,6 +78,7 @@ export default {
     });
 
   }),
+
 
   get: jest.fn(url => {
     if (url === "/api/days") {
@@ -106,4 +107,4 @@ export default {
       });
     }
   })
-}
+};

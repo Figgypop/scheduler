@@ -3,11 +3,6 @@ import React from "react";
 import Button from "components/Button";
 
 
-/*
-message:String eg. "Delete the appointment?"
-onConfirm:Function to be called when the user clicks the Confirm button
-onCancel:Function to be called when the user clicks the Cancel button
-*/
 
 export default function Confirm(props) {
   return (
