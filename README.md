@@ -44,18 +44,20 @@ npm run storybook
 # Screenshots of Application
 ## Homepage View
 
+![Homepage](https://github.com/Figgypop/scheduler/blob/master/docs/Homepage_Scheduler.png?raw=true)
+
 
 ## Book an Appointment!
-
+![Book Appointment](https://github.com/Figgypop/scheduler/blob/master/docs/Book_Appointment_Scheduler.png?raw=true)
 
 
 ## Edit an Appointment!
-
+![Edit Appointment](https://github.com/Figgypop/scheduler/blob/master/docs/Edit_Appointment_Scheduler.png?raw=true)
 
 
 
 ## Delete an Appointment!
-
+![Delete Appointment](https://github.com/Figgypop/scheduler/blob/master/docs/Delete_Appointment_Scheduler.png?raw=true)
 
 
 
